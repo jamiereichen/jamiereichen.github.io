@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Phones</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"> <!-- Google Font Poppins -->
+  <style>
+    /* Reset CSS */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Global styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #333;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Navigation styles */
+    nav {
+      background-color: #222;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #007bff; /* Changed to blue */
+    }
+
+    /* Content styles */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .phone-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .phone-card {
+      width: calc(33.33% - 20px);
+      margin: 10px;
+      padding: 20px;
+      background-color: #444;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .phone-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .phone-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .phone-card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .phone-card p {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff; /* Changed to blue */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3; /* Darker shade of blue on hover */
+    }
+
+    /* Responsive styles */
+    @media (max-width: 1200px) {
+      .phone-card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .phone-card {
+        width: calc(100% - 20px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Apple</a></li>
+      <li><a href="#">Samsung</a></li>
+      <li><a href="#">Xiaomi</a></li>
+      <li><a href="#">Oppo</a></li>
+      <li><a href="#">Vivo</a></li>
+      <li><a href="#">OnePlus</a></li>
+      <li><a href="#">Google</a></li>
+      <li><a href="#">Other</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content area -->
+  <div class="container">
+    <div class="phone-container">
+      <div class="phone-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3nXrwyjYfleObj1X30ZOfAnZ1a2xPVWqYQ&usqp=CAU" alt="Phone 1">
+        <h3>Apple iPhone</h3>
+        <p>Experience innovation at its finest with the latest iPhone models.</p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+      <div class="phone-card">
+        <img src="https://images.samsung.com/is/image/samsung/p6pim/uk/feature/164370272/uk-feature-galaxy-s-535141640?$FB_TYPE_I_JPG$" alt="Phone 2">
+        <h3>Samsung Galaxy</h3>
+        <p>Discover the power and versatility of Samsung Galaxy smartphones.</p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+      <div class="phone-card">
+        <img src="https://fdn.gsmarena.com/imgroot/static/headers/makers/google-2023-1.jpg" alt="Phone 3">
+        <h3>Google Pixel</h3>
+        <p>Experience pure Android with Google Pixel smartphones.</p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+      <div class="phone-card">
+        <img src="https://www.oneplus.com/content/dam/oasis/page/xueying/images-top-black-left_mo-1.jpg.webp" alt="Phone 4">
+        <h3>OnePlus</h3>
+        <p>Unlock the speed with OnePlus flagship smartphones.</p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+      <div class="phone-card">
+        <img src="https://images.news18.com/ibnlive/uploads/2023/10/vivo-2023-10-8fa23217141c176b18fd70ca729a2e17.jpg" alt="Phone 5">
+        <h3>Vivo</h3>
+        <p>Experience innovation and style with Vivo smartphones.</p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+      <!-- Add more phone cards for other brands -->
+    </div>
+  </div>
+</body>
+</html>
